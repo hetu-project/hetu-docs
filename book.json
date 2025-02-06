@@ -1,0 +1,11 @@
+{
+  "title": "hetu protocol docs",
+  "description": "hetu protocol is a protocol for building decentralized applications on hetu.",
+  "author": "hetu protocol",
+  "language": "EN",
+  "plugins": [
+    "-lunr",
+    "-search",
+    "search-plus"
+  ]
+} 
