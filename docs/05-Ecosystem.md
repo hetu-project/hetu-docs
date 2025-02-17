@@ -21,7 +21,7 @@ Hetu is a modular, multi-chain blockchain ecosystem designed to provide develope
 ETH drives daily transactions, lowering user barriers.
 HETU captures long-term ecosystem value, ensuring decentralized governance.
 
-| Token | 右对齐   | 居中对齐 |
+| Token | Core Use Cases   | User Value |
 | :-----| :----   | :---- |
 | ETH   | - Gas fee payments<br>- Cross-chain base asset | - No need to learn new tokens<br>- Seamless integration with the Ethereum ecosystem |
 | HETU  | - Governance voting rights<br>- Node staking<br>- Ecosystem incentive distribution | - Participate in governance decisions<br>- Share in the network’s growth dividends
