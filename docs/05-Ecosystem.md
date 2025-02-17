@@ -47,8 +47,7 @@ HETU captures long-term ecosystem value, ensuring decentralized governance.
 - **On-Chain Voting**: HETU holders stake tokens to participate in proposal decisions, including parameter adjustments and ecosystem fund usage.
 - **Tiered Response**:
   -  Regular Proposals : Community voting (7-day cycle, 20% circulating supply participation required).
-  - Emergency Proposals: 
-  - Rapid response by the validator committee (e.g., security fixes, effective within 2 hours).
+  - Emergency Proposals: Rapid response by the validator committee (e.g., security fixes, effective within 2 hours).
 - **Incentive Binding**: Proposal initiators and voters share rewards from the governance pool based on contributions.
   
 ## Ecosystem Vision
