@@ -26,10 +26,11 @@ Network Name： Hetu - testnet
 Chain ID：  560000  
 RPC URL：  
 Symbol :  Hetu  
-Block Explorer UR:     
+Block Explorer URL:  
+Faucet URL:    
 
 ###  Install Wallet
-- Recommended wallets:  [MetaMask](https://metamask.io/) or [Trust Wallet](https://trustwallet.com/)
+- Recommended wallets:  [MetaMask](https://metamask.io/)
 - Install via browser extension or mobile app store
 
 ##  Cross-chain Asset Transfer
