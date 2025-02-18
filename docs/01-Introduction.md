@@ -1,7 +1,7 @@
 ## Hetu Chain
 Hetu Chain is a blockchain optimized for specific application scenarios, focusing on high performance, customized functionalities, and cross-chain interoperability. Unlike general-purpose blockchains such as Ethereum, application chains achieve efficient operation through the following features:
 
-- Vertical Optimization: Tailored consensus mechanisms and transaction processing logic for third-party integrations such as AI agents and gaming.
+- Vertical Optimization: Tailored consensus mechanisms and transaction processing logic for third-party integrations such as AI agents.
 - Native Cross-Chain Support: Built-in asset bridging tools for seamless connectivity with major public chains like Ethereum.
 - Hybrid Economic Model: Allows simultaneous use of ETH and native tokens for network participation.
   

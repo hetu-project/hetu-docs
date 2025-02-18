@@ -9,7 +9,7 @@ Hetu is a modular, multi-chain blockchain ecosystem designed to provide develope
 - Features: Supports thousands of transactions per second (TPS) and is compatible with EVM smart contracts.
 
 2. **APP Chains (Application Chains)**:
-- Function:  Developers can build vertical scenario-specific chains (e.g., gaming chains, DeFi chains, enterprise chains) with fully customizable business rules.
+- Function:  Developers can build vertical scenario-specific chains (e.g., AI chains, enterprise chains) with fully customizable business rules.
 - Features: Zero node maintenance costs, leveraging the main chain’s shared security and cross-chain protocols.
   
 #### Cross-Chain Components
