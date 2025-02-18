@@ -18,5 +18,7 @@ Supported Assets: ETH, HETU, and compliant ecosystem assets .
 | Security | Relies on a single contract, concentrated risk | Multi-signature oversight + Checkpoint anchoring to Ethereum |
 | Cost | Fees often exceed 1% | 0.1% base rate, lower for bulk transactions |
 | Compatibility | Supports only mainstream assets | Supports custom asset transfers (via governance voting) |
-
-TODO: Add more detailed information about the core advantages of Hetu Bridge.
+  
+    
+    
+*TODO: Add more detailed information about the core advantages of Hetu Bridge.*
