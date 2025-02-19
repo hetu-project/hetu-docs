@@ -22,10 +22,10 @@ Integrated DApp Browser: Provides one-click access to decentralized applications
 
 ## Wallet Configuration
 ### Test Network
-Network Name： Hetu - testnet  
-Chain ID：  560000  
-RPC URL：  
-Symbol :  Hetu  
+Network Name： Hetu - testnetv1.0.1  
+Chain ID : 560000  
+RPC URL: https://rpc.testchainv1.hetuscan.com  
+Symbol : Hetu  
 Block Explorer URL:  
 Faucet URL:    
 
