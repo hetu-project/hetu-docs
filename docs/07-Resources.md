@@ -1,2 +1,0 @@
-*TODO:Recommended resource allocation*
-

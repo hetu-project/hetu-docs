@@ -17,6 +17,15 @@ Once the dependencies are installed, run:
 make install
 ```
 
+
+#### Recommended configuration
+
+- Server system: ubuntu
+- CPU: 8C
+- Memory: 16G
+- Disk: 1T
+- Bandwidth: 100 MB/s
+
 Or check out the latest [release](https://github.com/hetu-project/hetu/releases).
 
 ###  Deployment
