@@ -1,4 +1,4 @@
-## Hetu Docs
+## Hetu Chain Docs
 This repo houses the Hetu Docs located at [hetu docs repo](https://github.com/hetu-project/hetu-docs). All documentation-related updates and new content will be tracked and maintained in this repo.
 
 ### The documentation is structured in a logical sequence:
