@@ -56,7 +56,3 @@ HETU captures long-term ecosystem value, ensuring decentralized governance.
 - Lowering Blockchain Development Barriers: Enabling developers to build application chains as easily as creating websites.
 - Breaking Chain Barriers: Allowing users to explore the multi-chain world without technical concerns.
 - Democratizing Value: Ensuring fair distribution of ecosystem benefits through decentralized governance.
-
-**Join the Hetu Ecosystem**:
-- Developers:  
-- Governance Participation: 
