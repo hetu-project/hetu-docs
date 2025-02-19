@@ -2,7 +2,7 @@
 ## **Summary**
 Hetu Chain is a scalable, high-throughput blockchain that is fully compatible and interoperable with Ethereum.
 It's built using the [Cosmos SDK](https://github.com/cosmos/cosmos-sdk/) and implements
-[Narwhal](https://github.com/MystenLabs/narwhal) + [Bullshark](https://github.com/MystenLabs/sui/tree/main/consensus/bullshark) consensus mechanism
+[Narwhal+Bullshark](https://github.com/MystenLabs/narwhal) consensus mechanism
 for improved performance and scalability.
 
 ## Hetu Chain
