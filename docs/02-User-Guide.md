@@ -33,17 +33,8 @@ Faucet URL:
 - Recommended wallets:  [MetaMask](https://metamask.io/)
 - Install via browser extension or mobile app store
 
-##  Cross-chain Asset Transfer
-### ETH → HETU
 
-1. Visit the [Cross-Chain Bridge Page].
-2. Connect your wallet and select "ETH to HETU".
-3. Enter the transfer amount (minimum 0.01 ETH).
-4. Confirm the transaction (Ethereum Gas fees will apply).
+*TODO: Cross-chain Asset Transfer*
 
-### HETU → ETH
-1. Hold ETH in application chain wallet
-2. Initiate redemption transaction (2-minute waiting period)
-3. Assets will arrive after 15 Ethereum blocks
 
 
