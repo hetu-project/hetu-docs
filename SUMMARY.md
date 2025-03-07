@@ -1,8 +1,10 @@
 # Hetu Protocol Documentation
 
-## Getting Started
-* [Introduction](docs/01-Introduction.md)
-* [User Guide](docs/02-User-Guide.md)
+## Introduction
+* [Hetu Chain](docs/01-Introduction.md)
+
+## User Guide
+* [Getting Started](docs/02-User-Guide.md)
 
 ## Technical Documentation
 * [Fast Build](docs/03-01-Fast-Build.md)
@@ -11,9 +13,11 @@
 * [Checkpoint](docs/03-04-Checkpoint.md)
 * [Bridge](docs/03-05-Bridge.md)
 
-## Governance & Ecosystem
+## Governance
 * [Validator Governance](docs/04-Validator-Governance.md)
-* [Ecosystem](docs/05-Ecosystem.md)
 
-## Reference
-* [API Reference](docs/06-Api.md) 
+## Ecosystem
+* [Overview](docs/05-Ecosystem.md)
+
+## API Reference
+* [JSON-RPC API](docs/06-Api.md) 
