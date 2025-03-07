@@ -1,8 +1,7 @@
-
 ## Products
 Get an overview of the capabilities associated with an Hetu Stack App  Chain.
 
-<img src="./images/products.png" title="Products">
+![Products](./assets/products.png)
 
 
 ##### Hetu Chain

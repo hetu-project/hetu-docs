@@ -1,23 +1,22 @@
-
 ## summary
-<img src=./designs/architecture.png title="Architecture">
+![Architecture](./assets/architecture.png)
 
 ####  Layered Collaboration
-Hetu’s main chain handles consensus coordination and validator management, while application chains (APP Chains) focus on business execution. This forms a “main chain coordination + multi-chain parallelism” architecture.
+Hetu's main chain handles consensus coordination and validator management, while application chains (APP Chains) focus on business execution. This forms a "main chain coordination + multi-chain parallelism" architecture.
 
 #### ETH-Driven Ecosystem
-ETH serves as the medium for gas payments and cross-chain assets, enabling seamless circulation within and outside the ecosystem through standardized bridges. A Checkpoint mechanism periodically anchors the main chain’s state snapshots to Ethereum to ensure security.
+ETH serves as the medium for gas payments and cross-chain assets, enabling seamless circulation within and outside the ecosystem through standardized bridges. A Checkpoint mechanism periodically anchors the main chain's state snapshots to Ethereum to ensure security.
 
 #### HETU Governance
 The HETU token supports decentralized governance and validator staking, ensuring network upgrades and security decisions are made collectively by the community.
 
 #### Modular Expansion
-Developers can quickly build application chains that reuse the main chain’s security layer. Users enjoy a unified multi-chain experience, balancing efficiency and decentralization.
+Developers can quickly build application chains that reuse the main chain's security layer. Users enjoy a unified multi-chain experience, balancing efficiency and decentralization.
 
 
 ## Components
 
-<img src="./images/components.png" title="Components">
+![Components](./assets/components.png)
 
 ##### Data Availability
 The Data Availability (DA) layer defines the location where raw inputs are published. Currently, Hetu DA is the preferred data availability solution within the Hetu ecosystem. All ecosystem components can retrieve various types of information from Hetu as source data on demand.
