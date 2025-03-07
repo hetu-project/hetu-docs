@@ -1,3 +1,13 @@
+---
+title: "Fast Build Guide"
+description: "Instructions for quickly building with Hetu"
+---
+
+# Fast Build Guide
+
+## Summary
+Hetu Chain is a scalable, high-throughput blockchain...
+
 # [Hetu Parallel Engine](https://github.com/hetu-project/hetu-parallel-engine) 
 
 Hetu Parallel Engine is a high-performance blockchain consensus engine that combines the power of CometBFT with a customized DAG-based Narwhal consensus implementation. 

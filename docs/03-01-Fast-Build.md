@@ -1,4 +1,4 @@
-
+# Fast Build
 ## **Summary**
 Hetu Chain is a scalable, high-throughput blockchain that is fully compatible and interoperable with Ethereum.
 It's built using the [Cosmos SDK](https://github.com/cosmos/cosmos-sdk/) and implements
