@@ -6,7 +6,7 @@ Hetu Checkpoint is a secure and efficient checkpointing system that leverages Di
 
 Hetu Checkpoint creates secure checkpoints for multiple blocks using a network of validators. These checkpoints are then anchored to Ethereum, providing an additional layer of security and finality.
 
-<img src="./images/checkpoint-data.png" title="Checkpoint">
+<img src="../images/checkpoint-data.png" alt="Checkpoint">
 
 ## Key Features
 

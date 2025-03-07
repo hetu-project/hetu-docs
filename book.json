@@ -7,5 +7,13 @@
     "-lunr",
     "-search",
     "search-plus"
-  ]
+  ],
+  "styles": {
+    "website": "styles/website.css"
+  },
+  "pluginsConfig": {
+    "image-captions": {
+      "caption": "Image - _CAPTION_"
+    }
+  }
 } 

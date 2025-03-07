@@ -6,7 +6,7 @@ Hetu Chain is a blockchain optimized for specific application scenarios, focusin
 - Hybrid Economic Model: Allows simultaneous use of ETH and native tokens for network participation.
   
 ## Ecosystem Architecture and Role Division 
-<img src=./designs/layers.jpg title="Layers">
+<img src="../designs/layers.jpg" alt="Layers" />
 
 ### Layered Design
 - **Ethereum (Security Layer)**: Serves as the foundational security anchor of the ecosystem, ensuring trust infrastructure.
@@ -31,6 +31,8 @@ Hetu Chain is a blockchain optimized for specific application scenarios, focusin
 ### Optimized User Experience
 - **Single-Point Interaction**: Users can manage multi-chain assets through a single wallet, with cross-chain operations simplified to "one-click confirmation".
 - **User Convenience**: Gas fees support ETH payments, providing user-friendly transaction experiences.
+
+<img src="../images/checkpoint-data.png" alt="Checkpoint" />
 
 
 
