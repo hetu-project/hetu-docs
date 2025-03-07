@@ -1,4 +1,5 @@
-## Hetu Ecosystem
+
+# Hetu Ecosystem
 Hetu is a modular, multi-chain blockchain ecosystem designed to provide developers with efficient and low-cost solutions for building application chains, while offering users a seamless multi-chain interaction experience. Through layered design and resource sharing, Hetu achieves an optimal balance between security and scalability.
 
 ## Core Architecture
