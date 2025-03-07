@@ -1,12 +1,11 @@
 ---
-title: "Fast Build Guide"
-description: "Instructions for quickly building with Hetu"
+title: "Parallel Engine"
+description: "High-performance blockchain consensus engine"
 ---
 
-# Fast Build Guide
+# Parallel Engine
 
-## Summary
-Hetu Chain is a scalable, high-throughput blockchain...
+Hetu Parallel Engine is a high-performance blockchain consensus engine...
 
 # [Hetu Parallel Engine](https://github.com/hetu-project/hetu-parallel-engine) 
 
