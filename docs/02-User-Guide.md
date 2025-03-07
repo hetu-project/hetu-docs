@@ -25,8 +25,8 @@ Network Name： Hetu - testnetv1.0.1
 Chain ID : 560000  
 RPC URL: https://rpc.testchainv1.hetuscan.com  
 Symbol : Hetu  
-Block Explorer URL: http://testchainv1.hetuscan.com/
-Faucet URL: https:/testchainv1.hetuscan.com
+Block Explorer URL: http://testchainv1.hetuscan.com  
+Faucet URL: https://faucet.testchainv1.hetuscan.com
 
 ###  Install Wallet
 - Recommended wallets:  [MetaMask](https://metamask.io/)
