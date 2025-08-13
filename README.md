@@ -7,7 +7,7 @@ Welcome to the Hetu Protocol documentation. This repository contains comprehensi
 - [Introduction](docs/01-Introduction.md)
 - [User Guide](docs/02-User-Guide.md)
 - [Technical Documentation](docs/03-01-Fast-Build.md)
-- [Subnet](docs/04-Validator-Governance.md)
+- [Subnet](docs/04-00-Subnet.md)
 - [Ecosystem](docs/05-00-CLI.md)
 
 ## About Hetu Protocol
