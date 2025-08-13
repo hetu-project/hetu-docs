@@ -40,12 +40,54 @@ Users can exchange HETU tokens for subnet Alpha tokens:
 - **Slippage Protection**: Transactions revert if output falls below minimum
 - **Volume Tracking**: All trades contribute to user and total volume statistics
 
+#### Exchange Formulas
+
+**Stable Mechanism (1:1 Exchange)**
+```
+Alpha_out = HETU_in
+```
+
+**Dynamic Mechanism (AMM)**
+```
+k = subnetHETU × subnetAlphaIn (constant product)
+new_subnetHETU = subnetHETU + HETU_in
+new_subnetAlphaIn = k ÷ new_subnetHETU
+Alpha_out = subnetAlphaIn - new_subnetAlphaIn
+```
+
+Where:
+- `k`: Constant product maintained by the AMM
+- `subnetHETU`: Current HETU reserve in pool  
+- `subnetAlphaIn`: Current Alpha reserve available for trading
+- `HETU_in`: Amount of HETU tokens being swapped
+- `Alpha_out`: Amount of Alpha tokens received
+
 ### Alpha to HETU Swaps
 Users can exchange Alpha tokens back to HETU:
 - **Input**: Alpha amount and minimum HETU output required
 - **Reverse Pricing**: Calculates HETU output based on Alpha input
 - **Consistent Logic**: Uses same mechanism rules in reverse direction
 - **Statistical Updates**: Maintains comprehensive trading records
+
+#### Exchange Formulas
+
+**Stable Mechanism (1:1 Exchange)**
+```
+HETU_out = Alpha_in
+```
+
+**Dynamic Mechanism (AMM)**
+```
+k = subnetHETU × subnetAlphaIn (constant product)
+new_subnetAlphaIn = subnetAlphaIn + Alpha_in
+new_subnetHETU = k ÷ new_subnetAlphaIn
+HETU_out = subnetHETU - new_subnetHETU
+```
+
+Where:
+- `Alpha_in`: Amount of Alpha tokens being swapped
+- `HETU_out`: Amount of HETU tokens received
+- Other variables same as above
 
 ## Liquidity Management
 
@@ -75,11 +117,43 @@ System addresses can withdraw liquidity with safeguards:
 - **Mechanism Dependent**: Stable mechanism maintains 1:1 ratio
 - **Dynamic Updates**: Price changes with each trade in dynamic mechanism
 
+#### Price Formulas
+
+**Current Alpha Price**
+```
+Alpha_Price = (subnetHETU × 1e18) ÷ subnetAlphaIn
+```
+
+**Price After HETU→Alpha Swap**
+```
+new_Price = (new_subnetHETU × 1e18) ÷ new_subnetAlphaIn
+```
+
+**Price Impact Calculation**
+```
+Price_Impact = ((new_Price - old_Price) × 10000) ÷ old_Price
+```
+*Result in basis points (bps), where 100 bps = 1%*
+
 ### Moving Average Price
 - **Exponential Moving Average**: Smooths price fluctuations over time
 - **Block-Based Updates**: Updates based on blockchain block progression
 - **Halving Time**: Configurable decay rate for historical price influence
 - **Price Stability**: Provides reference for long-term value trends
+
+#### Moving Average Formula
+```
+blocks_elapsed = current_block - last_update_block
+alpha = (blocks_elapsed × 1e18) ÷ (blocks_elapsed + HALVING_TIME)
+one_minus_alpha = 1e18 - alpha
+
+moving_Price = (alpha × capped_current_price + one_minus_alpha × previous_moving_price) ÷ 1e18
+```
+
+Where:
+- `HALVING_TIME = 1000 blocks` (configurable constant)
+- `capped_current_price`: Current price capped at 1.0 (1e18)
+- Prices are scaled by 1e18 for precision
 
 ### Price Impact Analysis
 - **Trade Simulation**: Preview price impact before executing trades
@@ -120,6 +194,34 @@ System addresses can withdraw liquidity with safeguards:
 - **Mechanism-Aware**: Different calculations for stable vs dynamic modes
 - **Theoretical Comparison**: Shows difference from perfect pricing
 - **User Protection**: Helps users set appropriate slippage tolerances
+
+#### Slippage Calculation Formulas
+
+**Theoretical Output (Perfect Pricing)**
+
+For HETU→Alpha:
+```
+theoretical_Alpha_out = (HETU_in × subnetAlphaIn) ÷ subnetHETU
+```
+
+For Alpha→HETU:
+```
+theoretical_HETU_out = (Alpha_in × subnetHETU) ÷ subnetAlphaIn
+```
+
+**Slippage Rate**
+```
+slippage_rate = ((theoretical_out - actual_out) × 10000) ÷ theoretical_out
+```
+*Result in basis points (bps)*
+
+**Slippage Examples:**
+- 0-50 bps: Minimal slippage
+- 50-200 bps: Low slippage  
+- 200-500 bps: Moderate slippage
+- 500+ bps: High slippage
+
+Note: Stable mechanism has zero slippage (slippage_rate = 0)
 
 ### Reserve Verification
 - **Consistency Checks**: Ensures internal accounting matches actual balances
