@@ -6,8 +6,8 @@ Hetu is an open-source decentralized platform that enables participants to colla
 
 - **Compute Power** - Distributed computing resources
 - **Artificial Intelligence** - AI inference and training services
-- **Protein Folding** - Scientific computation for biological research
-- **Financial Market Prediction** - Market analysis and forecasting
+- **On-chain scientific provenance** - Scientific computation for scientific research
+- **Financial Market** - RWA and capital markets
 - **And many more** - Extensible to various digital commodity types
 
 ## Architecture
