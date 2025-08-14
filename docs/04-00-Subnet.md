@@ -26,7 +26,9 @@ The Hetu network consists of four key participant types, each playing a crucial 
 - **Role**: Design and manage subnet-specific incentive mechanisms
 - **Contribution**: Define work specifications and evaluation criteria
 - **Responsibility**: Maintain fair and effective reward systems
-- **Learn More**: [Create a Subnet](Subnet-Registration-Guide.md)
+- **Learn More**:
+    - [Understanding Hetu Subnets](04-01-Understand-Subnet.md)
+    - [Create a Subnet](Subnet-Registration-Guide.md)
 
 ### Miners
 - **Role**: Produce digital commodities and provide computational resources
