@@ -4,9 +4,9 @@ This repo houses the Hetu Docs located at [hetu docs repo](https://github.com/he
 
 ## Contents
 
-- [Introduction](docs/01-Introduction.md)
-- [User Guide](docs/02-User-Guide.md)
-- [Technical Documentation](docs/03-01-Fast-Build.md)
-- [Subnet](docs/04-00-Subnet.md)
-- [Client](docs/05-00-CLI.md)
+- [Introduction](docs/Introduction.md)
+- [User Guide](docs/User-Guide.md)
+- [Technical Documentation](docs/Fast-Build.md)
+- [Subnet](docs/subnet/Subnet.md)
+- [Client](docs/subnet/CLI.md)
 

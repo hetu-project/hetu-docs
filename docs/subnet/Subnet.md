@@ -27,27 +27,24 @@ The Hetu network consists of four key participant types, each playing a crucial 
 - **Contribution**: Define work specifications and evaluation criteria
 - **Responsibility**: Maintain fair and effective reward systems
 - **Learn More**:
-    - [Understanding Hetu Subnets](04-01-Understand-Subnet.md)
-    - [Create a Subnet](04-09-Create-Subnet.md)
+    - [Understanding Hetu Subnets](Understand-Subnet.md)
+    - [Create a Subnet](Create-Subnet.md)
 
 ### Miners
 - **Role**: Produce digital commodities and provide computational resources
 - **Contribution**: Generate value through specialized work and services
 - **Incentives**: Earn Hetu tokens  based on the quality and value of their contributions
-- **Learn More**: [Mining in Hetu](04-03-Mining.md)
 
 ### Validators
 - **Role**: Evaluate and validate the quality of miners' work
 - **Contribution**: Ensure network integrity by assessing output quality
 - **Incentives**: Receive rewards for accurate validation work
-- **Learn More**: [Validating in Hetu](04-04-Validating.md)
 
 
 ### Stakers
 - **Role**: Support network security by staking Hetu tokens
 - **Contribution**: Delegate tokens to trusted validators
 - **Benefits**: Earn passive rewards while strengthening network security
-- **Learn More**: [Staking](04-02-Staking-Delegation.md)
 
 ## Token Economics
 
@@ -77,8 +74,8 @@ The Hetu network operates on a sophisticated token economic model:
 - **Upper Limit**: Maximum subnet reward ratio capped at 90% of total emissions
 
 ### Learn More
-- [Detailed Economic Model](04-06-Economic-Model.md)
-- [Governance](04-07-Governance.md)
+- [Detailed Economic Model](Economic-Model.md)
+- [Governance](Governance.md)
 
 ## Stakework Consensus
 
@@ -112,7 +109,7 @@ The Stakework Consensus creates powerful incentives for network participants:
 - **Network**: Benefits from stable, predictable evaluation and reward mechanisms
 
 ### Learn More
-- [Detailed Consensus Mechanism](04-08-Stakework-Consensus.md)
+- [Detailed Consensus Mechanism](Stakework-Consensus.md)
 
 ## How to Participate
 
@@ -131,5 +128,5 @@ You can join the Hetu network in multiple ways:
 
 The Hetu ecosystem provides comprehensive tooling for developers and participants:
 
-- **[Hetu CLI](05-00-CLI.md)** - Command-line interface for network interaction
-- **[Hetu SDK](05-01-SDK.md)** - Software development kit for building applications
+- **[Hetu CLI](CLI.md)** - Command-line interface for network interaction
+- **[Hetu SDK](SDK.md)** - Software development kit for building applications
