@@ -31,7 +31,7 @@ The Hetu network consists of four key participant types, each playing a crucial 
 ### Miners
 - **Role**: Produce digital commodities and provide computational resources
 - **Contribution**: Generate value through specialized work and services
-- **Incentives**: Earn Hetu tokens (τ) based on the quality and value of their contributions
+- **Incentives**: Earn Hetu tokens  based on the quality and value of their contributions
 - **Learn More**: [Mining in Hetu](04-03-Mining.md)
 
 ### Validators
