@@ -1,0 +1,151 @@
+# Hetu Python SDK Introduction
+
+The Hetu Python SDK is a comprehensive toolkit for building and interacting with the Hetu EVM blockchain network. It provides a seamless interface for miners, validators, and subnet management through a unified API.
+
+## Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                        Hetu Network                            │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐        │
+│  │  Subnet 1   │    │  Subnet 2   │    │  Subnet N   │        │
+│  │ (AI/ML)     │    │ (DeFi)      │    │ (Gaming)    │        │
+│  └─────────────┘    └─────────────┘    └─────────────┘        │
+│           │                 │                 │                │
+│           ▼                 ▼                 ▼                │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐        │
+│  │   Miners    │    │   Miners    │    │   Miners    │        │
+│  │  (Xylem)    │    │  (Xylem)    │    │  (Xylem)    │        │
+│  │ • Compute   │    │ • Compute   │    │ • Compute   │        │
+│  │ • Services  │    │ • Services  │    │ • Services  │        │
+│  └─────────────┘    └─────────────┘    └─────────────┘        │
+│           ▲                 ▲                 ▲                │
+│           │                 │                 │                │
+│  ┌─────────────────────────────────────────────────────────────┐ │
+│  │                   Metastruct                               │ │
+│  │              (Service Discovery)                           │ │
+│  │  • Dendron Registry                                         │ │
+│  │  • Service Endpoints                                       │ │
+│  │  • Stake Information                                       │ │
+│  └─────────────────────────────────────────────────────────────┘ │
+│           │                 │                 │                │
+│           ▼                 ▼                 ▼                │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐        │
+│  │ Validators  │    │ Validators  │    │ Validators  │        │
+│  │(Phloem)     │    │(Phloem)     │    │(Phloem)     │        │
+│  │ • Discovery │    │ • Discovery │    │ • Discovery │        │
+│  │ • Requests  │    │ • Requests  │    │ • Requests  │        │
+│  │ • Validation│    │ • Validation│    │ • Validation│        │
+│  └─────────────┘    └─────────────┘    └─────────────┘        │
+│                                                                │
+│  ┌─────────────────────────────────────────────────────────────┐ │
+│  │                 Blockchain Layer                            │ │
+│  │              (EVM Smart Contracts)                         │ │
+│  │  • Dendron Manager                                          │ │
+│  │  • Subnet Manager                                           │ │
+│  │  • Global Staking                                           │ │
+│  └─────────────────────────────────────────────────────────────┘ │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**Flow**: Validators → Metastruct → Miners → Response → Validators
+
+## Core Components
+
+### Miners (Xylem)
+Miners provide compute services to the network. They run Xylem servers that handle computation requests from validators using Cambium communication protocol.
+
+```python
+from hetu.xylem import Xylem
+
+# Create and start a miner service
+xylem = Xylem(
+    username="miner_user",
+    password="miner_pass",
+    port=8091,
+    netuid=1
+)
+
+# Attach compute service
+xylem.attach(forward_fn=math_service)
+xylem.start()
+```
+
+### Validators (Phloem)
+Validators discover and interact with miner services through the metastruct. They send Cambium requests and validate responses.
+
+```python
+from hetu.phloem import Phloem
+
+# Create validator client
+phloem = Phloem(
+    username="validator_user", 
+    password="validator_pass",
+    netuid=1
+)
+
+# Discover available services via metastruct
+services = phloem.discover_xylem_services()
+
+# Send computation request using Cambium
+response = await phloem.query(target_xylem, cambium)
+```
+
+### Subnets
+Subnets are specialized networks within Hetu that group related services. Each subnet has its own miners and validators.
+
+```python
+from hetu.hetu import Hetutensor
+
+hetu = Hetutensor(network="mainnet")
+
+# Get subnet information
+subnet_info = hetu.get_subnet_info(netuid=1)
+miners = hetu.get_subnet_miners(netuid=1)
+validators = hetu.get_subnet_validators(netuid=1)
+```
+
+## How It Works
+
+1. **Service Registration**: Miners register on subnets with their endpoints and stake
+2. **Service Discovery**: Validators use metastruct to find available miner services
+3. **Request Processing**: Validators send Cambium requests to miners
+4. **Response Validation**: Miners process requests and return results via Cambium responses
+
+## SDK Architecture Implementation
+
+The SDK implements this architecture through several key layers:
+
+### **Network Layer (Metastruct)**
+- **Dynamic Service Discovery**: Automatically syncs with blockchain to discover active services
+- **Real-time Updates**: Continuously monitors network changes and service availability
+- **Stake-based Prioritization**: Services are ranked by their stake and reputation
+
+### **Communication Layer (Cambium)**
+- **Standardized Protocol**: Unified request/response format for all network interactions
+- **Authentication & Security**: Wallet-based signing and verification of all communications
+- **Error Handling**: Comprehensive error reporting and status code management
+
+### **Service Layer (Xylem/Phloem)**
+- **Role Validation**: Automatic verification of miner/validator permissions
+- **Load Balancing**: Intelligent distribution of requests across available services
+- **Health Monitoring**: Built-in health checks and service quality assessment
+
+### **Blockchain Integration**
+- **Smart Contract Interaction**: Direct integration with EVM contracts for network operations
+- **Stake Management**: Automated staking, unstaking, and reward distribution
+- **Governance**: Support for network parameter updates and subnet management
+
+## Key Features
+
+- **Decentralized Discovery**: Services are discovered through blockchain-based metastruct
+- **Authentication**: Wallet-based authentication for all operations
+- **Role Validation**: Automatic validation of miner/validator permissions
+- **Network Health**: Built-in monitoring and health checks
+- **EVM Compatible**: Full compatibility with Ethereum smart contracts
+- **Real-time Sync**: Continuous network state synchronization
+- **Intelligent Routing**: Smart request routing based on service availability and performance
+
+The SDK abstracts away the complexity of blockchain interactions, allowing developers to focus on building decentralized applications and services while leveraging the full power of Hetu's distributed architecture. 
